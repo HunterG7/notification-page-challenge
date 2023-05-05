@@ -1,0 +1,117 @@
+:root {
+    /* PRIMARY */
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    /* NEUTRAL */
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+}
+@font-face {
+    font-family: JakartaSans;
+    src: url("/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+body {
+    font-family: JakartaSans, sans-serif;
+}
+.page-wrapper {
+    background-color: var(--very-light-grayish-blue);
+}
+.container {
+    width: 45vw;
+    height: 90vh;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 5%);
+    padding: 10px;
+    gap: 10px;
+}
+#header h1 {
+    color: var(--very-dark-blue);
+    font-size: 35px;
+}
+#header .notification-count {
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: .5rem;
+    padding: 3px 12px;
+}
+#header p {
+    cursor: pointer;
+}
+.notification {
+    border-radius: .5rem;
+    padding: 10px 20px;
+    position: relative;
+}
+.notification.unread {
+    background-color: var(--very-light-grayish-blue);
+}
+.img-wrapper {
+    border-radius: 9999px;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.notif-message, .time-since-notif, #header p, .direct-message p  {
+    color: var(--grayish-blue);
+}
+.notif-message, .direct-message p {
+    font-size: 15px;
+}
+.username {
+    color: var(--very-dark-blue);
+}
+.username, .post {
+    font-weight: 900;
+    cursor: pointer;
+}
+.username:hover, .post:hover, #header p:hover {
+    color: var(--blue);
+}
+.time-since-notif {
+    font-size: 12px;
+}
+.notif-circle {
+    height: 9px;
+    width: 9px;
+    background-color: var(--red);
+    border-radius: 9999px;
+    margin-left: 5px;
+}
+.direct-message {
+    margin-top: 10px;
+    border-radius: .5rem;
+    border: 1px solid var(--light-grayish-blue-1);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.direct-message:hover {
+    background-color: var(--light-grayish-blue-1);
+}
+.direct-message p {
+    font-weight: 550;
+}
+.post-img-wrapper {
+    height: 3.3rem;
+    width: 3.3rem;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+}
+.post-img-wrapper:hover {
+    height: 3.1rem;
+    width: 3.1rem;
+    border: .2rem solid var(--light-grayish-blue-1);
+    border-radius: .5rem;
+}
+
+
+/* footer */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Notifications page</title>
+
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page-wrapper justify-center align-center">
+    <div class="container justify-space-between">
+
+        <div id="header" class="row justify-space-between">
+            <div class="column justify-center">
+                <div class="row align-center no-padding gap-10">
+                    <h1>Notifications</h1>
+                    <div class="notification-count">3</div>
+                </div>
+            </div>
+            <div class="column justify-center align-right">
+                <p>Mark all as read</p>
+            </div>
+        </div>
+
+        <div class="row notification unread">
+            <div class="img-wrapper">
+                <img src="assets/images/avatar-mark-webber.webp" alt="Mark Webber">
+            </div>
+            <div class="column justify-center">
+                <div class="row align-center no-padding no-gap">
+                    <p class="notif-message">
+                        <span class="username">Mark Webber</span>
+                        reacted to your recent post
+                        <span class="post">My first tournament today!</span>
+                        <div class="notif-circle"></div>
+                    </p>
+                </div>
+                <h6 class="time-since-notif">1m ago</h6>
+            </div>
+        </div>
+
+        <div class="row notification unread">
+            <div class="img-wrapper">
+                <img src="assets/images/avatar-angela-gray.webp" alt="Angela Gray">
+            </div>
+            <div class="column justify-center">
+                <div class="row align-center no-padding no-gap">
+                    <p class="notif-message">
+                        <span class="username">Angela Gray</span>
+                        followed you
+                        <span class="post"></span>
+                        <div class="notif-circle"></div>
+                    </p>
+                </div>
+                <h6 class="time-since-notif">5m ago</h6>
+            </div>
+        </div>
+
+        <div class="row notification unread">
+            <div class="img-wrapper">
+                <img src="assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson">
+            </div>
+            <div class="column justify-center">
+                <div class="row align-center no-padding no-gap">
+                    <p class="notif-message">
+                        <span class="username">Jacob Thompson</span>
+                        has joined your group
+                        <span class="post">Chess Club</span>
+                        <div class="notif-circle"></div>
+                    </p>
+                </div>
+                <h6 class="time-since-notif">1 day ago</h6>
+            </div>
+        </div>
+
+        <div class="row notification">
+            <div class="img-wrapper">
+                <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin">
+            </div>
+            <div class="column justify-center">
+                <div class="row align-center no-padding no-gap">
+                    <p class="notif-message">
+                        <span class="username">Rizky Hasanuddin</span>
+                        sent you a private message
+                        <span class="post"></span>
+                    </p>
+                </div>
+                <h6 class="time-since-notif">5 days ago</h6>
+                <div class="row direct-message">
+                    <p>
+                        Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+                        I'm already having lots of fun and improving my game.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row notification">
+            <div class="img-wrapper">
+                <img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith">
+            </div>
+            <div class="column justify-center">
+                <div class="row align-center no-padding no-gap">
+                    <p class="notif-message">
+                        <span class="username">Kimberly Smith</span>
+                        commented on your picture
+                        <span class="post">Chess Club</span>
+                    </p>
+                    <div class="post-img-wrapper">
+                        <img src="assets/images/image-chess.webp" alt="Chess Post">
+                    </div>
+                </div>
+                <h6 class="time-since-notif">1 week ago</h6>
+            </div>
+        </div>
+
+        <div class="row notification">
+            <div class="img-wrapper">
+                <img src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson">
+            </div>
+            <div class="column justify-center">
+                <div class="row align-center no-padding no-gap">
+                    <p class="notif-message">
+                        <span class="username">Nathan Peterson</span>
+                        reacted to your recent post
+                        <span class="post">5 end-game strategies to increase your win rate</span>
+                    </p>
+                </div>
+                <h6 class="time-since-notif">2 week ago</h6>
+            </div>
+        </div>
+
+        <div class="row notification">
+            <div class="img-wrapper">
+                <img src="assets/images/avatar-anna-kim.webp" alt="Anna Kim">
+            </div>
+            <div class="column justify-center">
+                <div class="row align-center no-padding no-gap">
+                    <p class="notif-message">
+                        <span class="username">Anna Kim</span>
+                        left the group
+                        <span class="post">Chess Club</span>
+                    </p>
+                </div>
+                <h6 class="time-since-notif">2 week ago</h6>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
